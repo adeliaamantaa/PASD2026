@@ -23,5 +23,15 @@ public class MatkulDemo01 {
 
             arrayOfMatkul[i] = new Matkul01 (kode, nama, sks, jumlahJam);
         }
+
+        for (int i=0; i<3; i++){
+            System.out.println("Data Matakuliah ke-" + (i+1));
+            System.out.println("Kode : " + arrayOfMatkul[i].kode);
+            System.out.println("Nama : " + arrayOfMatkul[i].nama);
+            System.out.println("Sks : " + arrayOfMatkul[i].sks);
+            System.out.println("Jumlah jam : " + arrayOfMatkul[i].jumlahJam);
+            System.out.println("--------------------------");
+
+        }
     }
 }
