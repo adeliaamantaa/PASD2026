@@ -3,10 +3,14 @@ import java.util.Scanner;
 
 public class MahasiswaDemo {
     public static void main(String[] args) {
-        MahasiswaBerprestasi list = new MahasiswaBerprestasi();
         Scanner sc = new Scanner(System.in);
-        int jumMhs = 5;
+        
+        System.out.print("Masukkan jumlah mahasiswa: ");
+        int jumMhs = sc.nextInt();
+        sc.nextLine();
 
+        MahasiswaBerprestasi list = new MahasiswaBerprestasi(jumMhs);
+        
         for (int i = 0; i < jumMhs; i++) {
             System.out.println("Masukkan Data Mahasiswa ke-" + (i + 1));
             System.out.print("NIM   : ");
